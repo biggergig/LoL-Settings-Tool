@@ -34,3 +34,8 @@ if not riot_dir:
     given_path = get_path()
     while "League of Legends" not in given_path:
         given_path = get_path()
+    os.chdir(given_path)
+
+sub_path = "\Config\PersistedSettings.json"
+print(os.getcwd())
+write_file(os.getcwd())
